@@ -10,24 +10,32 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
        
+       
         TabView{
-            HomeView()
+            
+            MyHomeView()
+               // .tag(0)
                 .tabItem {
                     Label("Home", systemImage: "house")
+                        
                 }
             
             TimerView()
+               // .tag(1)
                 .tabItem {
                     Label("Timer", systemImage: "hourglass")
                 }
             
             RecipeView()
+               // .tag(2)
                 .tabItem {
                     Label("Recipes", systemImage: "fork.knife")
                 }
                 
-        }.accentColor(.yellow)
+        }
+       
     }
+   
 }
 
 struct TabBar_Previews: PreviewProvider {

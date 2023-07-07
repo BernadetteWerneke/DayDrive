@@ -14,7 +14,7 @@ struct ContentView: View {
         Group{
             if authService.user != nil {
                 TabBar()
-                
+               
             } else {
                 SignIn()
             }
