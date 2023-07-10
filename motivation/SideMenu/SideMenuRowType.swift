@@ -9,20 +9,20 @@ import Foundation
 
 enum SideMenuRowType: Int, CaseIterable{
     case home = 0
-    case dataIF  //Intervallfasten Angaben allgemein
-    case dataPerson //persönliche angaben
-    case toLogOut      //abmelden
+    case favorite
+    case chat
+    case profile
     
     var title: String{
         switch self {
         case .home:
-            return "HomeView"
-        case .dataIF:
-            return "DataIFView"
-        case .dataPerson:
-            return "DataPersonView"
-        case .toLogOut:
-            return "HomeView"
+            return "Home"
+        case .favorite:
+            return "Favorite"
+        case .chat:
+            return "Chat"
+        case .profile:
+            return "Profile"
         }
     }
     
@@ -30,11 +30,11 @@ enum SideMenuRowType: Int, CaseIterable{
         switch self {
         case .home:
             return "home"
-        case .dataIF:
+        case .favorite:
             return "favorite"
-        case .dataPerson:
+        case .chat:
             return "chat"
-        case .toLogOut:
+        case .profile:
             return "profile"
         }
     }

@@ -8,46 +8,34 @@
 import SwiftUI
 
 struct MyHomeView: View {
+    //für SignOut
     @EnvironmentObject var authService: FBAuthService
-    @Binding var presentSideMenu: Bool
+    
     
     var body: some View {
         NavigationStack{
             
-                VStack{
-                    
-                    HStack{
-                        Button{
-                            presentSideMenu.toggle()
-                        } label: {
-                            Image(systemName: "square.and.arrow.up.fill")
-                                .font(.largeTitle)
-                        }
-                        Spacer()
-                    }
-                    
-                    
-                    
-                    
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                        .font(.largeTitle)
-                    
-                    //Sign Out Button
-                    Button {
-                        authService.signOut()
-                    } label: {
-                        Text("Sign Out")
-                    }
+            VStack{
+                //Sign Out Button
+                Button {
+                    authService.signOut()
+                } label: {
+                    Text("Sign Out")
                 }
-            
                 
-          
+                
+                
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    .font(.largeTitle)
+            }.navigationTitle("Daily Task")
         }
+    
     }
 }
 
+
 struct MyHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        MyHomeView(presentSideMenu: .constant(false))
+        MyHomeView()
     }
 }

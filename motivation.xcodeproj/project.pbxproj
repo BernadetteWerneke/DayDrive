@@ -33,13 +33,14 @@
 		4B1443702A5830CC00399FEC /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14436F2A5830CC00399FEC /* RecipeView.swift */; };
 		4B1443722A58311000399FEC /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443712A58311000399FEC /* RecipeCard.swift */; };
 		4B1443742A58313500399FEC /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443732A58313500399FEC /* RecipeDetailView.swift */; };
-		4B1443BF2A586B0A00399FEC /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443BE2A586B0A00399FEC /* SideMenu.swift */; };
-		4B1443C12A586B4A00399FEC /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C02A586B4A00399FEC /* SideMenuView.swift */; };
-		4B1443C32A586BA200399FEC /* SideMenuRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C22A586BA200399FEC /* SideMenuRowType.swift */; };
 		4B1443C52A586F2900399FEC /* DataIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C42A586F2900399FEC /* DataIFView.swift */; };
 		4B1443C72A58714300399FEC /* DataPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C62A58714300399FEC /* DataPersonView.swift */; };
-		4B1443C92A5894C200399FEC /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C82A5894C200399FEC /* MainTabbedView.swift */; };
-		4B1443CB2A58956B00399FEC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443CA2A58956B00399FEC /* HomeView.swift */; };
+		4B1444682A5C1E1500399FEC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444672A5C1E1500399FEC /* SettingView.swift */; };
+		4B1444732A5C357500399FEC /* QAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444722A5C357500399FEC /* QAView.swift */; };
+		4B1444752A5C358A00399FEC /* FastingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444742A5C358A00399FEC /* FastingDataView.swift */; };
+		4B1444772A5C359F00399FEC /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444762A5C359F00399FEC /* PersonalDataView.swift */; };
+		4B1444792A5C35BF00399FEC /* DoshaTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444782A5C35BF00399FEC /* DoshaTestView.swift */; };
+		4B14447B2A5C4C1300399FEC /* SetViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14447A2A5C4C1300399FEC /* SetViewList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,13 +88,14 @@
 		4B14436F2A5830CC00399FEC /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		4B1443712A58311000399FEC /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		4B1443732A58313500399FEC /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
-		4B1443BE2A586B0A00399FEC /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
-		4B1443C02A586B4A00399FEC /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		4B1443C22A586BA200399FEC /* SideMenuRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowType.swift; sourceTree = "<group>"; };
 		4B1443C42A586F2900399FEC /* DataIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataIFView.swift; sourceTree = "<group>"; };
 		4B1443C62A58714300399FEC /* DataPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersonView.swift; sourceTree = "<group>"; };
-		4B1443C82A5894C200399FEC /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
-		4B1443CA2A58956B00399FEC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4B1444672A5C1E1500399FEC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		4B1444722A5C357500399FEC /* QAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAView.swift; sourceTree = "<group>"; };
+		4B1444742A5C358A00399FEC /* FastingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingDataView.swift; sourceTree = "<group>"; };
+		4B1444762A5C359F00399FEC /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
+		4B1444782A5C35BF00399FEC /* DoshaTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoshaTestView.swift; sourceTree = "<group>"; };
+		4B14447A2A5C4C1300399FEC /* SetViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +149,8 @@
 			children = (
 				4B1443442A56F20000399FEC /* GoogleService-Info.plist */,
 				4B14434D2A56FAB500399FEC /* Pflichtenheft MotivApp V1.2 01.06.23 Kopie.pages */,
-				4B1443BD2A586AD200399FEC /* SideMenu */,
+				4B14447E2A5C789800399FEC /* DailyTask */,
+				4B1444662A5C1DFE00399FEC /* Settings */,
 				4B14435D2A582F1400399FEC /* Recipes */,
 				4B1443562A57172800399FEC /* IntervallTimer */,
 				4B1443412A56EA6700399FEC /* Views */,
@@ -197,11 +200,8 @@
 		4B1443412A56EA6700399FEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4B1443BE2A586B0A00399FEC /* SideMenu.swift */,
-				4B1443422A56EA7A00399FEC /* MyHomeView.swift */,
 				4B14434E2A57150100399FEC /* TabBar.swift */,
-				4B1443C82A5894C200399FEC /* MainTabbedView.swift */,
-				4B1443CA2A58956B00399FEC /* HomeView.swift */,
+				4B1443422A56EA7A00399FEC /* MyHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,13 +259,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4B1443BD2A586AD200399FEC /* SideMenu */ = {
+		4B1444662A5C1DFE00399FEC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				4B1443C02A586B4A00399FEC /* SideMenuView.swift */,
-				4B1443C22A586BA200399FEC /* SideMenuRowType.swift */,
+				4B14447A2A5C4C1300399FEC /* SetViewList.swift */,
+				4B1444712A5C343A00399FEC /* Views */,
+				4B1444672A5C1E1500399FEC /* SettingView.swift */,
 			);
-			path = SideMenu;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4B1444712A5C343A00399FEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B1444722A5C357500399FEC /* QAView.swift */,
+				4B1444742A5C358A00399FEC /* FastingDataView.swift */,
+				4B1444762A5C359F00399FEC /* PersonalDataView.swift */,
+				4B1444782A5C35BF00399FEC /* DoshaTestView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B14447E2A5C789800399FEC /* DailyTask */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DailyTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,32 +426,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1443CB2A58956B00399FEC /* HomeView.swift in Sources */,
+				4B1444752A5C358A00399FEC /* FastingDataView.swift in Sources */,
 				4B1443582A57173C00399FEC /* TimerView.swift in Sources */,
+				4B1444732A5C357500399FEC /* QAView.swift in Sources */,
 				4B1443722A58311000399FEC /* RecipeCard.swift in Sources */,
 				4B1443112A56E75A00399FEC /* ContentView.swift in Sources */,
-				4B1443BF2A586B0A00399FEC /* SideMenu.swift in Sources */,
 				4B1443C72A58714300399FEC /* DataPersonView.swift in Sources */,
-				4B1443C12A586B4A00399FEC /* SideMenuView.swift in Sources */,
+				4B14447B2A5C4C1300399FEC /* SetViewList.swift in Sources */,
 				4B14436B2A58306700399FEC /* ServingSize.swift in Sources */,
 				4B14433E2A56E7C400399FEC /* SignUp.swift in Sources */,
 				4B14433C2A56E7B700399FEC /* SignIn.swift in Sources */,
 				4B1443602A582F7800399FEC /* RecipeViewModel.swift in Sources */,
 				4B1443742A58313500399FEC /* RecipeDetailView.swift in Sources */,
 				4B1443632A582FCC00399FEC /* RecipeSteps.swift in Sources */,
+				4B1444792A5C35BF00399FEC /* DoshaTestView.swift in Sources */,
 				4B14435C2A57184800399FEC /* FastingManager.swift in Sources */,
 				4B1443692A58304200399FEC /* Ingredients.swift in Sources */,
-				4B1443C32A586BA200399FEC /* SideMenuRowType.swift in Sources */,
 				4B14436D2A58309200399FEC /* Nutrients.swift in Sources */,
 				4B1443702A5830CC00399FEC /* RecipeView.swift in Sources */,
-				4B1443C92A5894C200399FEC /* MainTabbedView.swift in Sources */,
 				4B1443432A56EA7A00399FEC /* MyHomeView.swift in Sources */,
 				4B1443672A58301900399FEC /* Recipe.swift in Sources */,
 				4B1443652A582FEE00399FEC /* Recipes.swift in Sources */,
 				4B1443402A56E90D00399FEC /* FBAuthService.swift in Sources */,
+				4B1444682A5C1E1500399FEC /* SettingView.swift in Sources */,
 				4B1443C52A586F2900399FEC /* DataIFView.swift in Sources */,
 				4B14435A2A57175000399FEC /* Progressring.swift in Sources */,
 				4B14430F2A56E75A00399FEC /* motivationApp.swift in Sources */,
+				4B1444772A5C359F00399FEC /* PersonalDataView.swift in Sources */,
 				4B14434F2A57150100399FEC /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

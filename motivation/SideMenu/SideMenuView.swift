@@ -19,7 +19,7 @@ struct SideMenuView: View {
                    Rectangle()
                        .fill(.white)
                        .frame(width: 270)
-                       .shadow(color: .purple.opacity(0.1), radius: 5, x: 0, y: 3)
+                       .shadow(color: .yellow.opacity(0.1), radius: 5, x: 0, y: 3)
                    
                    VStack(alignment: .leading, spacing: 0) {
                        ProfileImageView()
@@ -52,23 +52,23 @@ struct SideMenuView: View {
             VStack(alignment: .center){
                 HStack{
                     Spacer()
-                    Image("profile-image")
+                    Image("Minion")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 100, height: 100)
                         .overlay(
                             RoundedRectangle(cornerRadius: 50)
-                                .stroke(.purple.opacity(0.5), lineWidth: 10)
+                                .stroke(.yellow.opacity(0.5), lineWidth: 10)
                         )
                         .cornerRadius(50)
                     Spacer()
                 }
                 
-                Text("Muhammad Abbas")
+                Text("Minion")
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.black)
                 
-                Text("IOS Developer")
+                Text("Held")
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundColor(.black.opacity(0.5))
             }
@@ -81,7 +81,7 @@ struct SideMenuView: View {
                 VStack(alignment: .leading){
                     HStack(spacing: 20){
                         Rectangle()
-                            .fill(isSelected ? .purple : .white)
+                            .fill(isSelected ? .yellow : .white)
                             .frame(width: 5)
                         
                         ZStack{
@@ -101,7 +101,7 @@ struct SideMenuView: View {
             }
             .frame(height: 50)
             .background(
-                LinearGradient(colors: [isSelected ? .purple.opacity(0.5) : .white, .white], startPoint: .leading, endPoint: .trailing)
+                LinearGradient(colors: [isSelected ? .yellow.opacity(0.5) : .white, .white], startPoint: .leading, endPoint: .trailing)
             )
         }
     
