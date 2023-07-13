@@ -16,14 +16,8 @@ struct RecipeView: View {
     var body: some View {
         NavigationStack(path: $vm.navPath){
          
-                VStack(alignment: .leading, spacing: 16){
-                    
-                    //menu button
-                    Image(systemName: "line.3.horizontal")
-                        .onTapGesture {
-                            //TODO-------------------------------
-                        }
-                    
+            VStack(alignment: .leading, spacing: 16){
+                
                     //title
                     VStack(alignment: .leading){
                         Text("What would you like")
@@ -60,7 +54,7 @@ struct RecipeView: View {
                     
                     // 1 random Rezept mit Bild + Namen anzeigen
                     VStack{
-//
+
                         AsyncImage(url: URL(string: vm.recipes?.image ?? ""))
                         {
                             phase in

@@ -10,7 +10,7 @@ import SwiftUI
 struct MyHomeView: View {
     //für SignOut
     @EnvironmentObject var authService: FBAuthService
-    
+    @State var waterValue: Double = 0.0
     
     var body: some View {
         NavigationStack{
@@ -22,7 +22,9 @@ struct MyHomeView: View {
                 } label: {
                     Text("Sign Out")
                 }
-                
+                TimeCard()
+                WaterCard(waterValue: $waterValue)
+                StepCard()
                 
                 
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)

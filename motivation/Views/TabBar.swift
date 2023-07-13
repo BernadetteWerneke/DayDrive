@@ -7,38 +7,49 @@
 
 import SwiftUI
 
+enum Tabs: String {
+    case tasks
+    case timer
+    case recipes
+    case settings
+}
+
 struct TabBar: View {
+    
+    @State var selectedTab: Tabs = .tasks
     
     var body: some View {
        
             TabView{
                 
                 MyHomeView()
-                // .tag(0)
+                    .tag(Tabs.tasks)
                     .tabItem {
                         Label("MyHome", systemImage: "house")
                         
                     }
                 
                 TimerView()
-                // .tag(1)
+                    .tag(Tabs.timer)
                     .tabItem {
                         Label("Timer", systemImage: "hourglass")
                     }
                 
                 RecipeView()
-                // .tag(2)
+                    .tag(Tabs.recipes)
                     .tabItem {
                         Label("Recipes", systemImage: "fork.knife")
                     }
                 
                 SettingView()
-                // .tag(3)
+                    .tag(Tabs.settings)
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")
                     }
                 
-            }.accentColor(.yellow)
+            }
+            .navigationTitle(selectedTab.rawValue.capitalized)
+            .accentColor(.yellow)
     }
 }
 

@@ -41,6 +41,9 @@
 		4B1444772A5C359F00399FEC /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444762A5C359F00399FEC /* PersonalDataView.swift */; };
 		4B1444792A5C35BF00399FEC /* DoshaTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444782A5C35BF00399FEC /* DoshaTestView.swift */; };
 		4B14447B2A5C4C1300399FEC /* SetViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14447A2A5C4C1300399FEC /* SetViewList.swift */; };
+		4B1444962A607DAA00399FEC /* WaterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444952A607DAA00399FEC /* WaterCard.swift */; };
+		4B1444982A607DBF00399FEC /* StepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444972A607DBF00399FEC /* StepCard.swift */; };
+		4B14449A2A607DD100399FEC /* TimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444992A607DD100399FEC /* TimeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,9 @@
 		4B1444762A5C359F00399FEC /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
 		4B1444782A5C35BF00399FEC /* DoshaTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoshaTestView.swift; sourceTree = "<group>"; };
 		4B14447A2A5C4C1300399FEC /* SetViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewList.swift; sourceTree = "<group>"; };
+		4B1444952A607DAA00399FEC /* WaterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCard.swift; sourceTree = "<group>"; };
+		4B1444972A607DBF00399FEC /* StepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCard.swift; sourceTree = "<group>"; };
+		4B1444992A607DD100399FEC /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +208,9 @@
 			children = (
 				4B14434E2A57150100399FEC /* TabBar.swift */,
 				4B1443422A56EA7A00399FEC /* MyHomeView.swift */,
+				4B1444952A607DAA00399FEC /* WaterCard.swift */,
+				4B1444972A607DBF00399FEC /* StepCard.swift */,
+				4B1444992A607DD100399FEC /* TimeCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,6 +454,7 @@
 				4B14436D2A58309200399FEC /* Nutrients.swift in Sources */,
 				4B1443702A5830CC00399FEC /* RecipeView.swift in Sources */,
 				4B1443432A56EA7A00399FEC /* MyHomeView.swift in Sources */,
+				4B1444962A607DAA00399FEC /* WaterCard.swift in Sources */,
 				4B1443672A58301900399FEC /* Recipe.swift in Sources */,
 				4B1443652A582FEE00399FEC /* Recipes.swift in Sources */,
 				4B1443402A56E90D00399FEC /* FBAuthService.swift in Sources */,
@@ -454,6 +464,8 @@
 				4B14430F2A56E75A00399FEC /* motivationApp.swift in Sources */,
 				4B1444772A5C359F00399FEC /* PersonalDataView.swift in Sources */,
 				4B14434F2A57150100399FEC /* TabBar.swift in Sources */,
+				4B14449A2A607DD100399FEC /* TimeCard.swift in Sources */,
+				4B1444982A607DBF00399FEC /* StepCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
