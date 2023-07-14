@@ -16,19 +16,20 @@ struct MyHomeView: View {
         NavigationStack{
             
             VStack{
-                //Sign Out Button
-                Button {
-                    authService.signOut()
-                } label: {
-                    Text("Sign Out")
+                HStack{
+                    Spacer()
+                    //Sign Out Button
+                    Button {
+                        authService.signOut()
+                    } label: {
+                        Image(systemName: "power.circle.fill")
+                            .font(.largeTitle)
+                    }
                 }
-                TimeCard()
-                WaterCard(waterValue: $waterValue)
-                StepCard()
+                    TimeCard()
+                    WaterCard()
+                    StepCard()
                 
-                
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                    .font(.largeTitle)
             }.navigationTitle("Daily Task")
         }
     
