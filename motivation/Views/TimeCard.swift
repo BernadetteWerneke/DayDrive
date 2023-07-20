@@ -31,7 +31,7 @@ struct TimeCard: View {
                         .foregroundColor(.gray)
                 }
             
-                Text("16,3 hours")
+                Text("16,3 hours") //TODO einfügen der wirlichen Fatsenzeit------------------------------------------------
                     .font(.title3)
             }.padding()
         }

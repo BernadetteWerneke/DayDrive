@@ -35,7 +35,7 @@ struct TabBar: View {
                         Label("Timer", systemImage: "hourglass")
                     }
                 
-                RecipeView()
+                RecipeView2()
                     .tag(Tabs.recipes)
                     .tabItem {
                         Label("Recipes", systemImage: "fork.knife")

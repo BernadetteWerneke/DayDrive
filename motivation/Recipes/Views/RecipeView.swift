@@ -55,7 +55,7 @@ struct RecipeView: View {
                     // 1 random Rezept mit Bild + Namen anzeigen
                     VStack{
 
-                        AsyncImage(url: URL(string: vm.recipes?.image ?? ""))
+                        AsyncImage(url: URL(string: vm.recipe?.image ?? ""))
                         {
                             phase in
                             switch phase{
@@ -65,7 +65,7 @@ struct RecipeView: View {
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: 360, height: 360, alignment: .top)
                                     .overlay(alignment: .bottom) {
-                                        Text(vm.recipes?.name ?? "")
+                                        Text(vm.recipe?.name ?? "")
                                             .font(.largeTitle)
                                             .bold()
                                             .foregroundColor(.yellow)

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct StepCard: View {
-    @State var newSteps: String = ""
+    @Binding var newSteps: String
+    @State var newStepsInt: Int = 0
     
     var body: some View {
         ZStack{
@@ -49,12 +50,15 @@ struct StepCard: View {
                         }
                         .padding(.trailing)
                         
-                        //Eingabe der Schritte
+                        //manuelle Eingabe der Schritte
                         TextField("Enter steps...", text: $newSteps)
                             .frame(width: 150, height: 10.0)
                             .padding()
                             .background(.white)
                             .cornerRadius(15)
+                        //StringEingabe in Int wandeln
+                       
+                        
                         
                         Button{
                             //action !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -77,6 +81,6 @@ struct StepCard: View {
 
 struct StepCard_Previews: PreviewProvider {
     static var previews: some View {
-        StepCard()
+        StepCard(newSteps: .constant(""))
     }
 }

@@ -11,6 +11,7 @@ struct MyHomeView: View {
     //für SignOut
     @EnvironmentObject var authService: FBAuthService
     @State var waterValue: Double = 0.0
+    @State var newSteps: String = ""
     
     var body: some View {
         NavigationStack{
@@ -28,7 +29,7 @@ struct MyHomeView: View {
                 }
                     TimeCard()
                     WaterCard()
-                    StepCard()
+                    StepCard(newSteps: $newSteps)
                 
             }.navigationTitle("Daily Task")
         }

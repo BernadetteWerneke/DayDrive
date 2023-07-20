@@ -56,15 +56,16 @@ class FastingManager: ObservableObject {
     @Published private(set) var elapsedTime: Double = 0.0
     @Published private(set) var progress: Double = 0.0
     
+    //MARK Testzeit, Echtzeit
     //Essenszeit ist das Gegenteil von Fastenzeit
     var fastingTime: Double {
-        //*********************************************************************************** !!!!!!!!16 sec vs Echtzeit !!!!!!!!!!
-        return fastingPlan.fastingPeriod      //für Testzwecke Intervall auf 16 sec stellen
+        //*********************************************************************************** !!!!!!!!16 sec vs Echtzeit !!!!!!!!!!****************************************
+        return fastingPlan.fastingPeriod      //für Testzwecke Intervall auf 16 sec stellen *******************************************************************************
        // return fastingPlan.fastingPeriod * 60 * 60       //dies ist Echtzeit!!!!
     }
     var feedingTime: Double {
         return 24 - fastingPlan.fastingPeriod     //für Testzwecke Intervall umstellen
-        //return (24 - fastingPlan.fastingPeriod) * 60 * 60   //dies ist Echtzeit!!!!
+        //return (24 - fastingPlan.fastingPeriod) * 60 * 60   //dies ist Echtzeit!!!!**************************************************************************************
     }
     
     init() {
@@ -83,7 +84,7 @@ class FastingManager: ObservableObject {
         
         startTime = scheduledTime
         endTime = scheduledTime.addingTimeInterval(FastingPlan.intermediate.fastingPeriod)      //für Testzwecke umstellen
-        //endTime = scheduledTime.addingTimeInterval(FastingPlan.intermediate.fastingPeriod * 60 * 60)    //dies ist Echtzeit!!!!
+        //endTime = scheduledTime.addingTimeInterval(FastingPlan.intermediate.fastingPeriod * 60 * 60)    //dies ist Echtzeit!!!!******************************************
     }
     
     
