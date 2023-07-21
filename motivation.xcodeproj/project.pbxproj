@@ -42,6 +42,7 @@
 		4B14449A2A607DD100399FEC /* TimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444992A607DD100399FEC /* TimeCard.swift */; };
 		4B7F73E42A6978070022181A /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F73E32A6978070022181A /* RecipeView2.swift */; };
 		4B7F73E62A6978320022181A /* RecipeCardSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F73E52A6978320022181A /* RecipeCardSmall.swift */; };
+		4B7F74242A6A82170022181A /* RecipeAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F74232A6A82170022181A /* RecipeAllView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		4B1444992A607DD100399FEC /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
 		4B7F73E32A6978070022181A /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
 		4B7F73E52A6978320022181A /* RecipeCardSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardSmall.swift; sourceTree = "<group>"; };
+		4B7F74232A6A82170022181A /* RecipeAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAllView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				4B1443712A58311000399FEC /* RecipeCard.swift */,
 				4B1443732A58313500399FEC /* RecipeDetailView.swift */,
 				4B7F73E52A6978320022181A /* RecipeCardSmall.swift */,
+				4B7F74232A6A82170022181A /* RecipeAllView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				4B1443432A56EA7A00399FEC /* MyHomeView.swift in Sources */,
 				4B1444962A607DAA00399FEC /* WaterCard.swift in Sources */,
 				4B1443672A58301900399FEC /* Recipe.swift in Sources */,
+				4B7F74242A6A82170022181A /* RecipeAllView.swift in Sources */,
 				4B1443652A582FEE00399FEC /* Recipes.swift in Sources */,
 				4B1443402A56E90D00399FEC /* FBAuthService.swift in Sources */,
 				4B1444682A5C1E1500399FEC /* SettingView.swift in Sources */,
