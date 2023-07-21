@@ -20,18 +20,13 @@ struct MyHomeView: View {
                 HStack{
                     Spacer()
                     //Sign Out Button
-                    Button {
-                        authService.signOut()
-                    } label: {
-                        Image(systemName: "power.circle.fill")
-                            .font(.largeTitle)
-                    }
+                   
                 }
-                    TimeCard()
-                    WaterCard()
-                    StepCard(newSteps: $newSteps)
-                
-            }.navigationTitle("Daily Task")
+                DateHeader()
+                TimeCard()
+                WaterCard()
+                StepCard(newSteps: $newSteps)
+            }
         }
     
     }

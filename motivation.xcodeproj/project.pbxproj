@@ -43,6 +43,9 @@
 		4B7F73E42A6978070022181A /* RecipeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F73E32A6978070022181A /* RecipeView2.swift */; };
 		4B7F73E62A6978320022181A /* RecipeCardSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F73E52A6978320022181A /* RecipeCardSmall.swift */; };
 		4B7F74242A6A82170022181A /* RecipeAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F74232A6A82170022181A /* RecipeAllView.swift */; };
+		4B7F74292A6AF8C50022181A /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F74282A6AF8C50022181A /* View+extension.swift */; };
+		4B7F742B2A6AF8D70022181A /* Date*extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F742A2A6AF8D70022181A /* Date*extension.swift */; };
+		4B7F742D2A6AF8FA0022181A /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F742C2A6AF8FA0022181A /* DateHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,9 @@
 		4B7F73E32A6978070022181A /* RecipeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView2.swift; sourceTree = "<group>"; };
 		4B7F73E52A6978320022181A /* RecipeCardSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardSmall.swift; sourceTree = "<group>"; };
 		4B7F74232A6A82170022181A /* RecipeAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAllView.swift; sourceTree = "<group>"; };
+		4B7F74282A6AF8C50022181A /* View+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		4B7F742A2A6AF8D70022181A /* Date*extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date*extension.swift"; sourceTree = "<group>"; };
+		4B7F742C2A6AF8FA0022181A /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,8 +295,19 @@
 		4B14447E2A5C789800399FEC /* DailyTask */ = {
 			isa = PBXGroup;
 			children = (
+				4B7F74272A6AF8A30022181A /* extensions */,
 			);
 			path = DailyTask;
+			sourceTree = "<group>";
+		};
+		4B7F74272A6AF8A30022181A /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F74282A6AF8C50022181A /* View+extension.swift */,
+				4B7F742A2A6AF8D70022181A /* Date*extension.swift */,
+				4B7F742C2A6AF8FA0022181A /* DateHeader.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,12 +451,14 @@
 			files = (
 				4B1444752A5C358A00399FEC /* FastingDataView.swift in Sources */,
 				4B1443582A57173C00399FEC /* TimerView.swift in Sources */,
+				4B7F74292A6AF8C50022181A /* View+extension.swift in Sources */,
 				4B1444732A5C357500399FEC /* QAView.swift in Sources */,
 				4B1443722A58311000399FEC /* RecipeCard.swift in Sources */,
 				4B1443112A56E75A00399FEC /* ContentView.swift in Sources */,
 				4B1443C72A58714300399FEC /* DataPersonView.swift in Sources */,
 				4B14447B2A5C4C1300399FEC /* SetViewList.swift in Sources */,
 				4B14433E2A56E7C400399FEC /* SignUp.swift in Sources */,
+				4B7F742D2A6AF8FA0022181A /* DateHeader.swift in Sources */,
 				4B14433C2A56E7B700399FEC /* SignIn.swift in Sources */,
 				4B1443602A582F7800399FEC /* RecipeViewModel.swift in Sources */,
 				4B1443742A58313500399FEC /* RecipeDetailView.swift in Sources */,
@@ -451,6 +470,7 @@
 				4B1444962A607DAA00399FEC /* WaterCard.swift in Sources */,
 				4B1443672A58301900399FEC /* Recipe.swift in Sources */,
 				4B7F74242A6A82170022181A /* RecipeAllView.swift in Sources */,
+				4B7F742B2A6AF8D70022181A /* Date*extension.swift in Sources */,
 				4B1443652A582FEE00399FEC /* Recipes.swift in Sources */,
 				4B1443402A56E90D00399FEC /* FBAuthService.swift in Sources */,
 				4B1444682A5C1E1500399FEC /* SettingView.swift in Sources */,
