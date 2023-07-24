@@ -29,8 +29,6 @@
 		4B1443702A5830CC00399FEC /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14436F2A5830CC00399FEC /* RecipeView.swift */; };
 		4B1443722A58311000399FEC /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443712A58311000399FEC /* RecipeCard.swift */; };
 		4B1443742A58313500399FEC /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443732A58313500399FEC /* RecipeDetailView.swift */; };
-		4B1443C52A586F2900399FEC /* DataIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C42A586F2900399FEC /* DataIFView.swift */; };
-		4B1443C72A58714300399FEC /* DataPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1443C62A58714300399FEC /* DataPersonView.swift */; };
 		4B1444682A5C1E1500399FEC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444672A5C1E1500399FEC /* SettingView.swift */; };
 		4B1444732A5C357500399FEC /* QAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444722A5C357500399FEC /* QAView.swift */; };
 		4B1444752A5C358A00399FEC /* FastingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1444742A5C358A00399FEC /* FastingDataView.swift */; };
@@ -46,6 +44,8 @@
 		4B7F74292A6AF8C50022181A /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F74282A6AF8C50022181A /* View+extension.swift */; };
 		4B7F742B2A6AF8D70022181A /* Date*extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F742A2A6AF8D70022181A /* Date*extension.swift */; };
 		4B7F742D2A6AF8FA0022181A /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F742C2A6AF8FA0022181A /* DateHeader.swift */; };
+		4B7F746E2A6EB2D70022181A /* DailyTasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F746C2A6EB2D70022181A /* DailyTasks.xcdatamodeld */; };
+		4B7F74712A6EB3E60022181A /* DailyTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F74702A6EB3E60022181A /* DailyTaskViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +89,6 @@
 		4B14436F2A5830CC00399FEC /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		4B1443712A58311000399FEC /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		4B1443732A58313500399FEC /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
-		4B1443C42A586F2900399FEC /* DataIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataIFView.swift; sourceTree = "<group>"; };
-		4B1443C62A58714300399FEC /* DataPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersonView.swift; sourceTree = "<group>"; };
 		4B1444672A5C1E1500399FEC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		4B1444722A5C357500399FEC /* QAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAView.swift; sourceTree = "<group>"; };
 		4B1444742A5C358A00399FEC /* FastingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingDataView.swift; sourceTree = "<group>"; };
@@ -106,6 +104,8 @@
 		4B7F74282A6AF8C50022181A /* View+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
 		4B7F742A2A6AF8D70022181A /* Date*extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date*extension.swift"; sourceTree = "<group>"; };
 		4B7F742C2A6AF8FA0022181A /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		4B7F746D2A6EB2D70022181A /* DailyTaskViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyTaskViewModel.xcdatamodel; sourceTree = "<group>"; };
+		4B7F74702A6EB3E60022181A /* DailyTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,8 +225,6 @@
 				4B1443572A57173C00399FEC /* TimerView.swift */,
 				4B1443592A57175000399FEC /* Progressring.swift */,
 				4B14435B2A57184800399FEC /* FastingManager.swift */,
-				4B1443C42A586F2900399FEC /* DataIFView.swift */,
-				4B1443C62A58714300399FEC /* DataPersonView.swift */,
 			);
 			path = IntervallTimer;
 			sourceTree = "<group>";
@@ -295,6 +293,8 @@
 		4B14447E2A5C789800399FEC /* DailyTask */ = {
 			isa = PBXGroup;
 			children = (
+				4B7F746F2A6EB3BA0022181A /* ViewModel */,
+				4B7F746B2A6EB2B10022181A /* Model */,
 				4B7F74272A6AF8A30022181A /* extensions */,
 			);
 			path = DailyTask;
@@ -308,6 +308,22 @@
 				4B7F742C2A6AF8FA0022181A /* DateHeader.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		4B7F746B2A6EB2B10022181A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F746C2A6EB2D70022181A /* DailyTasks.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B7F746F2A6EB3BA0022181A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F74702A6EB3E60022181A /* DailyTaskViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,10 +471,10 @@
 				4B1444732A5C357500399FEC /* QAView.swift in Sources */,
 				4B1443722A58311000399FEC /* RecipeCard.swift in Sources */,
 				4B1443112A56E75A00399FEC /* ContentView.swift in Sources */,
-				4B1443C72A58714300399FEC /* DataPersonView.swift in Sources */,
 				4B14447B2A5C4C1300399FEC /* SetViewList.swift in Sources */,
 				4B14433E2A56E7C400399FEC /* SignUp.swift in Sources */,
 				4B7F742D2A6AF8FA0022181A /* DateHeader.swift in Sources */,
+				4B7F746E2A6EB2D70022181A /* DailyTasks.xcdatamodeld in Sources */,
 				4B14433C2A56E7B700399FEC /* SignIn.swift in Sources */,
 				4B1443602A582F7800399FEC /* RecipeViewModel.swift in Sources */,
 				4B1443742A58313500399FEC /* RecipeDetailView.swift in Sources */,
@@ -473,8 +489,8 @@
 				4B7F742B2A6AF8D70022181A /* Date*extension.swift in Sources */,
 				4B1443652A582FEE00399FEC /* Recipes.swift in Sources */,
 				4B1443402A56E90D00399FEC /* FBAuthService.swift in Sources */,
+				4B7F74712A6EB3E60022181A /* DailyTaskViewModel.swift in Sources */,
 				4B1444682A5C1E1500399FEC /* SettingView.swift in Sources */,
-				4B1443C52A586F2900399FEC /* DataIFView.swift in Sources */,
 				4B7F73E62A6978320022181A /* RecipeCardSmall.swift in Sources */,
 				4B14435A2A57175000399FEC /* Progressring.swift in Sources */,
 				4B14430F2A56E75A00399FEC /* motivationApp.swift in Sources */,
@@ -826,6 +842,19 @@
 			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4B7F746C2A6EB2D70022181A /* DailyTasks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B7F746D2A6EB2D70022181A /* DailyTaskViewModel.xcdatamodel */,
+			);
+			currentVersion = 4B7F746D2A6EB2D70022181A /* DailyTaskViewModel.xcdatamodel */;
+			path = DailyTasks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4B1443032A56E75A00399FEC /* Project object */;
 }

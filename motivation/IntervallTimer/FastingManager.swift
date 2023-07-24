@@ -10,7 +10,7 @@ import Foundation
 enum FastingState {
     case notStarted
     case fasting
-    case feeding
+   // case feeding
 }
 
 //Fastenintervalle 1.Anfänger, 2.Mittel, 3.Fortgeschritten
@@ -41,9 +41,9 @@ class FastingManager: ObservableObject {
             print("startTime", startTime.formatted(.dateTime.month().day().hour().minute().second()))
             if fastingState == .fasting {
                 endTime = startTime.addingTimeInterval(fastingTime)
-            } else {
+            } /*else {
                 endTime = startTime.addingTimeInterval(feedingTime)
-            }
+            }*/
         }
     }
     @Published private(set) var endTime: Date {
@@ -89,7 +89,8 @@ class FastingManager: ObservableObject {
     
     
     func toggleFastingState() {
-        fastingState = fastingState == .fasting ? .feeding : .fasting
+       // fastingState = fastingState == .fasting ? .feeding : .fasting
+        fastingState = fastingState == .fasting ? .notStarted : .fasting
         startTime = Date()
         elapsedTime = 0.0
     }
@@ -110,8 +111,12 @@ class FastingManager: ObservableObject {
         elapsedTime += 1
         print("elapsedTime", elapsedTime)
         
-        let totalTime = fastingState == .fasting ? fastingTime : feedingTime
-        progress = (elapsedTime / totalTime * 100).rounded() / 100
-        print("progress", progress)
+       // let totalTime = fastingState == .fasting ? fastingTime : feedingTime
+        if (fastingState == .fasting) {
+            let totalTime = fastingTime
+            
+            progress = (elapsedTime / totalTime * 100).rounded() / 100
+            print("progress", progress)
+        }
     }
 }

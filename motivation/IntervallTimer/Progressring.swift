@@ -73,9 +73,6 @@ struct Progressring: View {
         }
         .frame(width: 250, height: 250)
         .padding()
-//        .onAppear{
-//            fastingManager.progress = 1
-//        }
         .onReceive(timer) { _ in
             fastingManager.track()
         }

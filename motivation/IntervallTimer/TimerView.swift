@@ -17,8 +17,8 @@ struct TimerView: View {
             return "Let's get started!"
         case .fasting:
             return "You are now fasting"
-        case .feeding:
-            return "You are now feeding"
+      //  case .feeding:
+      //      return "You are now feeding"
         }
     }
     
