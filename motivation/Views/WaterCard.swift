@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct WaterCard: View {
-    
-   // @StateObject var dayvm = TaskVM()
+    @StateObject var taskvm = DailyTaskViewModel()
+    @StateObject private var vm = DailyTaskViewModel()
     @State private var waterValue : Float = 0.0             //Wasserangabe
     @State private var totalWaterValue: Float = 0.0
     
@@ -43,6 +43,8 @@ struct WaterCard: View {
                     //aktuelle Wasseranzeige aufsummiert
                     Text("\(totalWaterValue, specifier: "%.1f") l")
                         .font(.title3)
+                    
+                    
                             
                     //Slider zum Wählen der Wasserangabe mit Aktualisierung (+/-Button)
                     VStack{
@@ -54,6 +56,9 @@ struct WaterCard: View {
                                 if(totalWaterValue <= 0.0){
                                     totalWaterValue = 0.0
                                 }
+                                //Wasser speichern
+                                taskvm.saveDailyWater(water: totalWaterValue)
+                                
                                 //SliderValue auf null setzen
                                 waterValue = 0.0
                           
@@ -76,6 +81,8 @@ struct WaterCard: View {
                                    
                             Button{
                                 totalWaterValue += waterValue
+                                //Wasser speichern
+                                taskvm.saveDailyWater(water: totalWaterValue)
                                 //SliderValue auf null setzen
                                 waterValue = 0.0
                             } label: {
@@ -86,6 +93,7 @@ struct WaterCard: View {
                                     .foregroundColor(.yellow)
                             }
                         }
+                        .animation(.default)
                         .background(.white)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                    
@@ -95,7 +103,7 @@ struct WaterCard: View {
                 .padding()
             }
         }
-    }
+}
 
 
 struct WaterView_Previews: PreviewProvider {
