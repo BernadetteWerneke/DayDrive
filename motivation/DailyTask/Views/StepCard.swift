@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct StepCard: View {
+    @StateObject var taskvm = DailyTaskViewModel()
     @Binding var newSteps: String
-    @State var newStepsInt: Int = 0
+    @State private var newStepsInt: Int = 0
+    @State private var totalNewSteps: Int = 0
     
     var body: some View {
         ZStack{
@@ -34,12 +36,20 @@ struct StepCard: View {
                 }
                 
                 VStack{
-                    Text("7,511 steps")
+                    Text("\(taskvm.saveCurrentDay.dailySteps) steps")
                         .font(.title3)
                     
                     HStack{
+                        
+                        //Minnus-Button
                         Button{
-                            //action
+                            newStepsInt = Int(newSteps) ?? 0
+                            totalNewSteps -= newStepsInt
+                            if(totalNewSteps <= 0){
+                                totalNewSteps = 0
+                            }
+                            //Steps speichern
+                            taskvm.saveDailySteps(steps: Int(totalNewSteps))
                         } label: {
                             Image(systemName: "minus.circle")
                                 .resizable()
@@ -52,16 +62,20 @@ struct StepCard: View {
                         
                         //manuelle Eingabe der Schritte
                         TextField("Enter steps...", text: $newSteps)
+                            .keyboardType(.numberPad)       //Zahlenkeyboard
                             .frame(width: 150, height: 10.0)
                             .padding()
                             .background(.white)
                             .cornerRadius(15)
-                        //StringEingabe in Int wandeln
                        
                         
-                        
+                        //Plus-Button
                         Button{
-                            //action !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                            newStepsInt = Int(newSteps) ?? 0
+                            totalNewSteps += newStepsInt
+                            //Steps speichern
+                            taskvm.saveDailySteps(steps: Int(totalNewSteps))
+                           
                         } label: {
                             Image(systemName: "plus.circle")
                                 .resizable()

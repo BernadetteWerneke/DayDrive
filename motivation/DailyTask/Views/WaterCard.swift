@@ -9,9 +9,9 @@ import SwiftUI
 
 struct WaterCard: View {
     @StateObject var taskvm = DailyTaskViewModel()
-    @StateObject private var vm = DailyTaskViewModel()
     @State private var waterValue : Float = 0.0             //Wasserangabe
-    @State private var totalWaterValue: Float = 0.0
+    @State private var totalWaterValue: Float = 0.0         //Wasserangabe gesamt
+    
     
     var body: some View {
         ZStack{
@@ -40,12 +40,10 @@ struct WaterCard: View {
                             .foregroundColor(.gray)
                     }
                        
-                    //aktuelle Wasseranzeige aufsummiert
-                    Text("\(totalWaterValue, specifier: "%.1f") l")
+                    //dailyWater vom heutigen Tag anzeigen
+                    Text("\(taskvm.saveCurrentDay.dailyWater, specifier: "%.1f") l")
                         .font(.title3)
                     
-                    
-                            
                     //Slider zum Wählen der Wasserangabe mit Aktualisierung (+/-Button)
                     VStack{
                         HStack{

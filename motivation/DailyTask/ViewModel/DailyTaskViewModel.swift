@@ -25,10 +25,10 @@ class DailyTaskViewModel: ObservableObject {
                 fatalError("DEBUG: Core Data store loading failed: \(error.localizedDescription)")
             }
         }
-        //Damit beim Starten schon die Daten angezeigt werden -> in BarChart, in HomeView
-        fetchDays()
+        //zeige heutigen Tag in MyHomeView
+        fetchCurrentDay()
         
-        //createNewDay()
+        createNewDay()
     }
     
     
@@ -100,13 +100,13 @@ class DailyTaskViewModel: ObservableObject {
     }
     
     
-    func saveDailyFastingTime(_ day:Day, fastingTime: Float) {
+    func saveDailyFastingTime(fastingTime: Double) {
         fetchCurrentDay()   //
         
         //fatingTime aktualisiert
         saveCurrentDay.fastingTime = fastingTime
         
-        print(saveCurrentDay.fastingTime)
+        print("123CD total fasting time: \(saveCurrentDay.fastingTime)")
         
         do {
             try dayContainer.viewContext.save()
@@ -117,13 +117,13 @@ class DailyTaskViewModel: ObservableObject {
     }
     
     
-    func saveDailySteps(_ day: Day, steps: Int16) {
+    func saveDailySteps(steps: Int) {
         fetchCurrentDay()   //
         
         //fatingTime aktualisiert
-        saveCurrentDay.dailySteps = steps
+        saveCurrentDay.dailySteps = Int64(steps)
         
-        print(saveCurrentDay.dailySteps)
+        print("123CD daily steps saved: \(saveCurrentDay.dailySteps)")
         
         do {
             try dayContainer.viewContext.save()

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     @StateObject var fastingManager =  FastingManager()
+    @StateObject var taskvm = DailyTaskViewModel()
     
     //Wechsel des Titels je nach Zustand
     var title: String {
@@ -17,8 +18,6 @@ struct TimerView: View {
             return "Let's get started!"
         case .fasting:
             return "You are now fasting"
-      //  case .feeding:
-      //      return "You are now feeding"
         }
     }
     
@@ -29,7 +28,6 @@ struct TimerView: View {
             //Titel
             Text(title)
                 .font(.headline)
-                .foregroundColor(Color(#colorLiteral(red: 0.06990530342, green: 0.05029194057, blue: 0.001987644471, alpha: 1)))
             
             //Fasten Intervall
             Text(fastingManager.fastingPlan.rawValue)
@@ -64,7 +62,11 @@ struct TimerView: View {
             
             //Button
             Button {
+                //fasting time speichern
+                taskvm.saveDailyFastingTime(fastingTime: fastingManager.elapsedTime)
+                
                 fastingManager.toggleFastingState()
+                
             } label: {
                 Text(fastingManager.fastingState == .fasting ? "End fast" : "Start Fasting")
                     .font(.title3)

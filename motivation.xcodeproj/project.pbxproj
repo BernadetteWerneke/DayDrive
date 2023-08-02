@@ -212,9 +212,6 @@
 			children = (
 				4B14434E2A57150100399FEC /* TabBar.swift */,
 				4B1443422A56EA7A00399FEC /* MyHomeView.swift */,
-				4B1444952A607DAA00399FEC /* WaterCard.swift */,
-				4B1444972A607DBF00399FEC /* StepCard.swift */,
-				4B1444992A607DD100399FEC /* TimeCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +290,7 @@
 		4B14447E2A5C789800399FEC /* DailyTask */ = {
 			isa = PBXGroup;
 			children = (
+				4B8A783A2A7A7DD1008A41A9 /* Views */,
 				4B7F746F2A6EB3BA0022181A /* ViewModel */,
 				4B7F746B2A6EB2B10022181A /* Model */,
 				4B7F74272A6AF8A30022181A /* extensions */,
@@ -324,6 +322,16 @@
 				4B7F74702A6EB3E60022181A /* DailyTaskViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B8A783A2A7A7DD1008A41A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B1444992A607DD100399FEC /* TimeCard.swift */,
+				4B1444952A607DAA00399FEC /* WaterCard.swift */,
+				4B1444972A607DBF00399FEC /* StepCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

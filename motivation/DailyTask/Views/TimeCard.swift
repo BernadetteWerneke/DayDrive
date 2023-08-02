@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TimeCard: View {
+    @StateObject var taskvm = DailyTaskViewModel()
+    
     var body: some View {
         ZStack{
             Color.yellow.opacity(0.1)
@@ -24,14 +26,16 @@ struct TimeCard: View {
                             .resizable()
                             .frame(width: 25, height: 30)
                             .foregroundColor(.yellow)
-                            
                     }
+                
                     Text("Goal: 16 h")
                         .font(.headline)
                         .foregroundColor(.gray)
                 }
             
-                Text("16,3 hours") //TODO einfügen der wirlichen Fatsenzeit------------------------------------------------
+                //total fasting time anzeigen
+                var roundedSteps = String(format: "%.1f", taskvm.saveCurrentDay.fastingTime)    //fastingManager.elapsedTime
+                Text("\(roundedSteps) hours")
                     .font(.title3)
             }.padding()
         }

@@ -11,9 +11,8 @@ import SwiftUI
 //ProgressRing mit verstrichener und verbliebener Zeit
 struct Progressring: View {
     @EnvironmentObject var fastingManager: FastingManager
-    //@State var progress = 0.0
     
-    //timer publisher (api)
+    //timer publisher 
     let timer = Timer.publish(every: 1, on: .main, in: .common)
         .autoconnect()
     

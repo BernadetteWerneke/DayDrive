@@ -10,7 +10,6 @@ import Foundation
 enum FastingState {
     case notStarted
     case fasting
-   // case feeding
 }
 
 //Fastenintervalle 1.Anfänger, 2.Mittel, 3.Fortgeschritten
@@ -41,9 +40,7 @@ class FastingManager: ObservableObject {
             print("startTime", startTime.formatted(.dateTime.month().day().hour().minute().second()))
             if fastingState == .fasting {
                 endTime = startTime.addingTimeInterval(fastingTime)
-            } /*else {
-                endTime = startTime.addingTimeInterval(feedingTime)
-            }*/
+            }
         }
     }
     @Published private(set) var endTime: Date {
@@ -71,13 +68,6 @@ class FastingManager: ObservableObject {
     init() {
         let calendar = Calendar.current
         
-/*      var components = calendar.dateComponents([.year, .month, .day, .hour], from: Date())
-        components.hour = 20
-        print(components)
-        
-        let scheduledTime = calendar.date(from: components) ?? Date.now
-        print("scheduledTime" , scheduledTime.formatted(.dateTime.month().day().hour().minute().second()))
- */
         let components = DateComponents(hour: 20)
         let scheduledTime = calendar.nextDate(after: .now, matching: components, matchingPolicy: .nextTime)!
         print("scheduledTime", scheduledTime.formatted(.dateTime.month().day().hour().minute().second()))
@@ -89,7 +79,6 @@ class FastingManager: ObservableObject {
     
     
     func toggleFastingState() {
-       // fastingState = fastingState == .fasting ? .feeding : .fasting
         fastingState = fastingState == .fasting ? .notStarted : .fasting
         startTime = Date()
         elapsedTime = 0.0
@@ -111,7 +100,6 @@ class FastingManager: ObservableObject {
         elapsedTime += 1
         print("elapsedTime", elapsedTime)
         
-       // let totalTime = fastingState == .fasting ? fastingTime : feedingTime
         if (fastingState == .fasting) {
             let totalTime = fastingTime
             
