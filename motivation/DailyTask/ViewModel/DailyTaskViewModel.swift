@@ -86,9 +86,9 @@ class DailyTaskViewModel: ObservableObject {
         fetchCurrentDay()   //
         
         //dailyWater aktualisiert
-        saveCurrentDay.dailyWater = water
+        saveCurrentDay.dailyWater = round(water * 10) / 10.0
         
-        print(saveCurrentDay.dailyWater)
+        print("rounded totalWaterValue: \(saveCurrentDay.dailyWater)")
         
         do {
             try dayContainer.viewContext.save()

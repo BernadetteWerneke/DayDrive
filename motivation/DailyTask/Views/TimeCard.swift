@@ -34,8 +34,7 @@ struct TimeCard: View {
                 }
             
                 //total fasting time anzeigen
-                var roundedSteps = String(format: "%.1f", taskvm.saveCurrentDay.fastingTime)    //fastingManager.elapsedTime
-                Text("\(roundedSteps) hours")
+                Text("\(String(format: "%.1f", taskvm.saveCurrentDay.fastingTime)) hours" )  //fastingManager.elapsedTime
                     .font(.title3)
             }.padding()
         }
