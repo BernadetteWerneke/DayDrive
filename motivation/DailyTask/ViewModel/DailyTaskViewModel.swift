@@ -24,11 +24,16 @@ class DailyTaskViewModel: ObservableObject {
             if let error = error {
                 fatalError("DEBUG: Core Data store loading failed: \(error.localizedDescription)")
             }
+            
+            
         }
+        //set a merge policy on the context (alternating saving steps/water)
+        dayContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
         //zeige heutigen Tag in MyHomeView
         fetchCurrentDay()
         
-        createNewDay()
+       // createNewDay()
     }
     
     
@@ -123,7 +128,7 @@ class DailyTaskViewModel: ObservableObject {
         //fatingTime aktualisiert
         saveCurrentDay.dailySteps = Int64(steps)
         
-        print("123CD daily steps saved: \(saveCurrentDay.dailySteps)")
+        print("123CD daily steps: \(saveCurrentDay.dailySteps)")
         
         do {
             try dayContainer.viewContext.save()

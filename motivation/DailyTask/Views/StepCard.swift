@@ -44,12 +44,14 @@ struct StepCard: View {
                         //Minnus-Button
                         Button{
                             newStepsInt = Int(newSteps) ?? 0
-                            totalNewSteps -= newStepsInt
+                            totalNewSteps = Int(taskvm.saveCurrentDay.dailySteps) - newStepsInt
                             if(totalNewSteps <= 0){
                                 totalNewSteps = 0
                             }
                             //Steps speichern
                             taskvm.saveDailySteps(steps: Int(totalNewSteps))
+                            //Textfiled leeren
+                            newSteps = ""
                         } label: {
                             Image(systemName: "minus.circle")
                                 .resizable()
@@ -72,9 +74,11 @@ struct StepCard: View {
                         //Plus-Button
                         Button{
                             newStepsInt = Int(newSteps) ?? 0
-                            totalNewSteps += newStepsInt
+                            totalNewSteps = newStepsInt + Int(taskvm.saveCurrentDay.dailySteps)
                             //Steps speichern
                             taskvm.saveDailySteps(steps: Int(totalNewSteps))
+                            //Textfeld leeren
+                            newSteps = ""
                            
                         } label: {
                             Image(systemName: "plus.circle")

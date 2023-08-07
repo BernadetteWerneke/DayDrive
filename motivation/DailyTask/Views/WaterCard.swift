@@ -50,7 +50,7 @@ struct WaterCard: View {
                             
                             //Minus Button
                             Button{
-                                totalWaterValue -= waterValue
+                                totalWaterValue = taskvm.saveCurrentDay.dailyWater - waterValue
                                 if(totalWaterValue <= 0.0){
                                     totalWaterValue = 0.0
                                 }
@@ -66,6 +66,7 @@ struct WaterCard: View {
                                     .frame(width: 35, height: 35)
                                     .foregroundColor(.yellow)
                             }
+                            
                                 
                             //Slider
                             Slider(value: $waterValue, in: 0.0...3.0)
@@ -77,8 +78,10 @@ struct WaterCard: View {
                                 .font(.title3)
                                 .foregroundColor(.gray)
                                    
+                            
+                            //Plus-Button
                             Button{
-                                totalWaterValue += waterValue
+                                totalWaterValue = waterValue + taskvm.saveCurrentDay.dailyWater
                                 //Wasser speichern
                                 taskvm.saveDailyWater(water: totalWaterValue)
                                 //SliderValue auf null setzen
@@ -90,6 +93,10 @@ struct WaterCard: View {
                                     .cornerRadius(15)
                                     .foregroundColor(.yellow)
                             }
+                            
+                            
+                            
+                            
                         }
                         .animation(.default)
                         .background(.white)
