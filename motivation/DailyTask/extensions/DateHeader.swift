@@ -20,7 +20,7 @@ struct DateHeader: View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 5) {
                 //1. Zeile: Titel und Logout-Button
-                Text("DailyTask")
+                Text("Daily Tasks")
                 
                 Spacer()
                 

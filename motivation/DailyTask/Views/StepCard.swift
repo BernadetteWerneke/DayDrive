@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StepCard: View {
     @StateObject var taskvm = DailyTaskViewModel()
-    @Binding var newSteps: String
+    @State var newSteps: String = ""
     @State private var newStepsInt: Int = 0
     @State private var totalNewSteps: Int = 0
     
@@ -99,6 +99,6 @@ struct StepCard: View {
 
 struct StepCard_Previews: PreviewProvider {
     static var previews: some View {
-        StepCard(newSteps: .constant(""))
+        StepCard()
     }
 }

@@ -13,9 +13,9 @@ class DailyTaskViewModel: ObservableObject {
     
     let dayContainer: NSPersistentContainer
     
-    //gespeicherte Tage in Liste sammeln
-    @Published var savedDays: [Day] = [Day]()
+    @Published var savedDays: [Day] = [Day]()   //gespeicherte Tage in Liste sammeln
     @Published var saveCurrentDay: Day = Day()
+   
     
     init() {
         dayContainer = NSPersistentContainer(name: "DailyTasks")
@@ -27,13 +27,13 @@ class DailyTaskViewModel: ObservableObject {
             
             
         }
-        //set a merge policy on the context (alternating saving steps/water)
+        //set a merge policy on the context (because of alternating saving steps/water)
         dayContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         
         //zeige heutigen Tag in MyHomeView
         fetchCurrentDay()
         
-       // createNewDay()
+        //createNewDay()
     }
     
     
@@ -77,7 +77,7 @@ class DailyTaskViewModel: ObservableObject {
         newDay.dailyWater = 0
         newDay.dailySteps = 0
         newDay.fastingTime = 0
-        newDay.todayDate = Date()  //Datum wird auf heute gesetzt
+        newDay.todayDate = Date()
         
         do {
             try dayContainer.viewContext.save()

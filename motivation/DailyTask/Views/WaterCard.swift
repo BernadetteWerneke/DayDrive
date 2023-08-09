@@ -9,8 +9,8 @@ import SwiftUI
 
 struct WaterCard: View {
     @StateObject var taskvm = DailyTaskViewModel()
-    @State private var waterValue : Float = 0.0             //Wasserangabe
-    @State private var totalWaterValue: Float = 0.0         //Wasserangabe gesamt
+    @State var waterValue : Float = 0.0             //Wasserangabe
+    @State var totalWaterValue: Float = 0.0         //Wasserangabe gesamt
     
     
     var body: some View {

@@ -8,29 +8,22 @@
 import SwiftUI
 
 struct MyHomeView: View {
-    //für SignOut
-    @EnvironmentObject var authService: FBAuthService
+    
+    @EnvironmentObject var authService: FBAuthService   //für SignOut
     @State var waterValue: Double = 0.0
     @State var newSteps: String = ""
     
     var body: some View {
-        NavigationStack{
-            
-            VStack{
-                HStack{
-                    Spacer()
-                    //Sign Out Button
-                   
-                }
-                DateHeader()
-                TimeCard()
-                WaterCard()
-                StepCard(newSteps: $newSteps)
-            }
+        
+        VStack{
+            DateHeader()
+            TimeCard()
+            WaterCard()
+            StepCard()
         }
-    
     }
 }
+
 
 
 struct MyHomeView_Previews: PreviewProvider {
