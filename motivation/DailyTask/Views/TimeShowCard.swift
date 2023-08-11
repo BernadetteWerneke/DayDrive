@@ -34,7 +34,7 @@ struct TimeShowCard: View {
                 }
             
                 //total fasting time anzeigen
-                Text("16,3 h")
+                Text("xx,x h")
                // Text("\(String(format: "%.1f", taskvm.saveCurrentDay.fastingTime)) hours" )  //fastingManager.elapsedTime
                     .font(.title3)
             }.padding()

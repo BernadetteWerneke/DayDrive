@@ -64,7 +64,7 @@ struct StepCard: View {
                         
                         //manuelle Eingabe der Schritte
                         TextField("Enter steps...", text: $newSteps)
-                            .keyboardType(.numberPad)       //Zahlenkeyboard
+                            //.keyboardType(.numberPad)       //Zahlenkeyboard
                             .frame(width: 150, height: 10.0)
                             .padding()
                             .background(.white)

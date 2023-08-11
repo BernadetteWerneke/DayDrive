@@ -35,7 +35,7 @@ struct StepShowCard: View {
                         .foregroundColor(.gray)
                 }
                 
-               Text("12.567 steps")
+               Text("x.xxx steps")
                    // Text("\(taskvm.saveCurrentDay.dailySteps) steps")
                         .font(.title3)
                     

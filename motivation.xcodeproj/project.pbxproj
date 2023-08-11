@@ -50,6 +50,7 @@
 		4B8A78462A817CD9008A41A9 /* WaterShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78452A817CD9008A41A9 /* WaterShowCard.swift */; };
 		4B8A78482A817CEB008A41A9 /* StepShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78472A817CEB008A41A9 /* StepShowCard.swift */; };
 		4B8A784A2A817F77008A41A9 /* TimeShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78492A817F77008A41A9 /* TimeShowCard.swift */; };
+		4B8A78A42A857393008A41A9 /* InputDailyTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78A32A857393008A41A9 /* InputDailyTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,6 @@
 		4B14433F2A56E90D00399FEC /* FBAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthService.swift; sourceTree = "<group>"; };
 		4B1443422A56EA7A00399FEC /* MyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeView.swift; sourceTree = "<group>"; };
 		4B1443442A56F20000399FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		4B14434D2A56FAB500399FEC /* Pflichtenheft MotivApp V1.2 01.06.23 Kopie.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft MotivApp V1.2 01.06.23 Kopie.pages"; sourceTree = "<group>"; };
 		4B14434E2A57150100399FEC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4B1443572A57173C00399FEC /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		4B1443592A57175000399FEC /* Progressring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progressring.swift; sourceTree = "<group>"; };
@@ -114,6 +114,8 @@
 		4B8A78452A817CD9008A41A9 /* WaterShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterShowCard.swift; sourceTree = "<group>"; };
 		4B8A78472A817CEB008A41A9 /* StepShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepShowCard.swift; sourceTree = "<group>"; };
 		4B8A78492A817F77008A41A9 /* TimeShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeShowCard.swift; sourceTree = "<group>"; };
+		4B8A78A32A857393008A41A9 /* InputDailyTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDailyTaskView.swift; sourceTree = "<group>"; };
+		4B8A78A52A86500D008A41A9 /* Pflichtenheft MotivApp V1.4 .pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft MotivApp V1.4 .pages"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				4B1443442A56F20000399FEC /* GoogleService-Info.plist */,
-				4B14434D2A56FAB500399FEC /* Pflichtenheft MotivApp V1.2 01.06.23 Kopie.pages */,
+				4B8A78A52A86500D008A41A9 /* Pflichtenheft MotivApp V1.4 .pages */,
 				4B14447E2A5C789800399FEC /* DailyTask */,
 				4B1444662A5C1DFE00399FEC /* Settings */,
 				4B14435D2A582F1400399FEC /* Recipes */,
@@ -264,12 +266,12 @@
 		4B14436E2A5830AE00399FEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B7F74232A6A82170022181A /* RecipeAllView.swift */,
 				4B14436F2A5830CC00399FEC /* RecipeView.swift */,
 				4B7F73E32A6978070022181A /* RecipeView2.swift */,
 				4B1443712A58311000399FEC /* RecipeCard.swift */,
 				4B1443732A58313500399FEC /* RecipeDetailView.swift */,
 				4B7F73E52A6978320022181A /* RecipeCardSmall.swift */,
-				4B7F74232A6A82170022181A /* RecipeAllView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,7 +313,6 @@
 			children = (
 				4B7F74282A6AF8C50022181A /* View+extension.swift */,
 				4B7F742A2A6AF8D70022181A /* Date*extension.swift */,
-				4B7F742C2A6AF8FA0022181A /* DateHeader.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -335,6 +336,8 @@
 		4B8A783A2A7A7DD1008A41A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B7F742C2A6AF8FA0022181A /* DateHeader.swift */,
+				4B8A78A32A857393008A41A9 /* InputDailyTaskView.swift */,
 				4B1444992A607DD100399FEC /* TimeCard.swift */,
 				4B1444952A607DAA00399FEC /* WaterCard.swift */,
 				4B1444972A607DBF00399FEC /* StepCard.swift */,
@@ -505,6 +508,7 @@
 				4B1443702A5830CC00399FEC /* RecipeView.swift in Sources */,
 				4B1443432A56EA7A00399FEC /* MyHomeView.swift in Sources */,
 				4B1444962A607DAA00399FEC /* WaterCard.swift in Sources */,
+				4B8A78A42A857393008A41A9 /* InputDailyTaskView.swift in Sources */,
 				4B1443672A58301900399FEC /* Recipe.swift in Sources */,
 				4B7F74242A6A82170022181A /* RecipeAllView.swift in Sources */,
 				4B7F742B2A6AF8D70022181A /* Date*extension.swift in Sources */,

@@ -40,7 +40,7 @@ struct WaterShowCard: View {
                     }
                     
                     //dailyWater anzeigen
-                    Text("1,9 l")
+                    Text("x,x l")
                    // Text("\(taskvm.saveCurrentDay.dailyWater, specifier: "%.1f") l")
                         .font(.title3)
             

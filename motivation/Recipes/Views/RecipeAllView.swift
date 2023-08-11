@@ -23,12 +23,13 @@ struct RecipeAllView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false){
                     LazyHGrid(rows: rows) {
-                        /* ForEach(vm.recipes, id: \.self) { recip in
+                         ForEach(vm.recipes, id: \.self) { recip in
+                          //   RecipeAllView(recipe: recip)
                          RecipeCardSmall(recipe: recip)
-                         }*/
-                        ForEach(0x1f600...0x1f679, id: \.self) { value in
+                         }
+                        /*ForEach(0x1f600...0x1f679, id: \.self) { value in
                             Rectangle()
-                        }
+                        }*/
                     }
                 }.frame(height: 130)
                     .padding(.top, 15)

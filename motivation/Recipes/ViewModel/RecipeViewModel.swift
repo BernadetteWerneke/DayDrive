@@ -20,7 +20,8 @@ class RecipeViewModel: ObservableObject {
     //fetch search Recipes
     func fetchSearchRecipes() {
         let headers = [
-            "X-RapidAPI-Key": "866e99e885msh6526f0a59099dd2p1bcc1ajsn05e0325167cb",
+            //"X-RapidAPI-Key": "46da00cabbmshd953d415fe9c716p1393abjsn33d25eeea8bf", //aktueller key
+            "X-RapidAPI-Key": "866e99e885msh6526f0a59099dd2p1bcc1ajsn05e0325167cb",  //veraltert
                 "X-RapidAPI-Host": "low-carb-recipes.p.rapidapi.com"
         ]
 
@@ -63,8 +64,9 @@ class RecipeViewModel: ObservableObject {
     //response ist 1 random Recipe
     func getRamdomRecipe() {
         let headers = [
-           // "X-RapidAPI-Key": "fc6dead686mshce7ea79da7d34dfp14c7a9jsn05cf4107d86e",   //veraltert
-            "X-RapidAPI-Key": "866e99e885msh6526f0a59099dd2p1bcc1ajsn05e0325167cb",
+            // "X-RapidAPI-Key": "fc6dead686mshce7ea79da7d34dfp14c7a9jsn05cf4107d86e",   //veraltert
+            "X-RapidAPI-Key": "866e99e885msh6526f0a59099dd2p1bcc1ajsn05e0325167cb",     //veraltert
+            //"X-RapidAPI-Key": "46da00cabbmshd953d415fe9c716p1393abjsn33d25eeea8bf",   //aktueller key
             "X-RapidAPI-Host": "low-carb-recipes.p.rapidapi.com"
         ]
         

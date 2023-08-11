@@ -10,16 +10,19 @@ import SwiftUI
 struct MyHomeView: View {
     
     @EnvironmentObject var authService: FBAuthService   //für SignOut
+    @EnvironmentObject var taskvm: DailyTaskViewModel
     @State var waterValue: Double = 0.0
     @State var newSteps: String = ""
+   
     
     var body: some View {
         
         VStack{
             DateHeader()
-            TimeCard()
-            WaterCard()
-            StepCard()
+           
+            InputDailyTaskView()
+           
+            //ShowPreviousTasksView()
         }
     }
 }

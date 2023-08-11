@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ShowPreviousTasksView: View {
+    //@Binding var currentDate: Date
+    
     var body: some View {
         
         VStack{
