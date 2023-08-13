@@ -55,6 +55,7 @@ struct WaterCard: View {
                                     totalWaterValue = 0.0
                                 }
                                 //Wasser speichern
+                                taskvm.fetchCurrentDay()
                                 taskvm.saveDailyWater(water: totalWaterValue)
                                 
                                 //SliderValue auf null setzen
@@ -83,6 +84,7 @@ struct WaterCard: View {
                             Button{
                                 totalWaterValue = waterValue + taskvm.saveCurrentDay.dailyWater
                                 //Wasser speichern
+                                taskvm.fetchCurrentDay()
                                 taskvm.saveDailyWater(water: totalWaterValue)
                                 //SliderValue auf null setzen
                                 waterValue = 0.0

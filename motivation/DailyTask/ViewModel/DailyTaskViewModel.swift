@@ -29,6 +29,8 @@ class DailyTaskViewModel: ObservableObject {
         
         createNewDay()
         fetchCurrentDay()
+        
+        dayContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy //***
     }
     
     
@@ -136,13 +138,16 @@ class DailyTaskViewModel: ObservableObject {
         
         print("123CD daily steps: \(saveCurrentDay.dailySteps)")
         
-        do {
-            try dayContainer.viewContext.save()
-            print("Data saved!!")
-        } catch {
-            print("DEBUG: dailySteps could not save: \(error.localizedDescription)")
+        
+            do {
+                
+                try dayContainer.viewContext.save()
+                print("Data saved!!")
+            } catch {
+                print("DEBUG: dailySteps could not save: \(error.localizedDescription)")
+            }
         }
-    }
+    
     
         
 }
