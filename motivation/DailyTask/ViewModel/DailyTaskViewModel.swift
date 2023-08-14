@@ -129,6 +129,10 @@ class DailyTaskViewModel: ObservableObject {
         }
     }
     
+    func fetchDailyFastingTime() {
+        
+    }
+    
     
     func saveDailySteps(steps: Int) {
         fetchCurrentDay()   //

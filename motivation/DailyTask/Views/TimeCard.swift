@@ -34,6 +34,7 @@ struct TimeCard: View {
                 }
             
                 //total fasting time anzeigen
+                
                 let totalTime = taskvm.saveCurrentDay.fastingTime
                 Text("\(String(format: "%.1f", totalTime)) hours" )     //fastingManager.elapsedTime
                     .font(.title3)
