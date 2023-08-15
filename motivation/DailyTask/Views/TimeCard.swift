@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TimeCard: View {
     @StateObject var taskvm = DailyTaskViewModel()
-   
+    
     var body: some View {
         ZStack{
             Color.yellow.opacity(0.1)
@@ -35,12 +35,15 @@ struct TimeCard: View {
             
                 //total fasting time anzeigen
                 
-                let totalTime = taskvm.saveCurrentDay.fastingTime
-                Text("\(String(format: "%.1f", totalTime)) hours" )     //fastingManager.elapsedTime
-                    .font(.title3)
+                    let totalTime = taskvm.saveCurrentDay.fastingTime
+                    Text("\(String(format: "%.1f", totalTime)) hours" )     //fastingManager.elapsedTime
+                        .font(.title3)
+                
             }.padding()
         }
+       
     }
+    
 }
 
 struct TimeCard_Previews: PreviewProvider {

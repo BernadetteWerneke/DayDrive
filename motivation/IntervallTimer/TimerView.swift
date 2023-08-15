@@ -64,9 +64,8 @@ struct TimerView: View {
             Button {
                
                 //fasting time speichern nur wenn 0 (d.h. ein neuer Tag) ist
-                taskvm.fetchCurrentDay() //***
                if (taskvm.saveCurrentDay.fastingTime == 0) {
-                    taskvm.saveDailyFastingTime(fastingTime: fastingManager.elapsedTime)
+               taskvm.saveDailyFastingTime(fastingTime: fastingManager.elapsedTime)
                     print("123IntervallTimer TimerView info: fastingTime is Null, it is a new day, saving ")
                 } else  {
                     print("123IntervallTimer TimerView info: fastingTime is not Null, not a new day, no saving ")

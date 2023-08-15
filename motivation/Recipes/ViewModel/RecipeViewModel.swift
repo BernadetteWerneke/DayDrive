@@ -20,8 +20,8 @@ class RecipeViewModel: ObservableObject {
     //fetch search Recipes
     func fetchSearchRecipes() {
         let headers = [
-            //"X-RapidAPI-Key": "46da00cabbmshd953d415fe9c716p1393abjsn33d25eeea8bf", //aktueller key
-            "X-RapidAPI-Key": "866e99e885msh6526f0a59099dd2p1bcc1ajsn05e0325167cb",  //veraltert
+            "X-RapidAPI-Key": "46da00cabbmshd953d415fe9c716p1393abjsn33d25eeea8bf", //aktueller key
+            //"X-RapidAPI-Key": "866e99e885msh6526f0a59099dd2p1bcc1ajsn05e0325167cb",  //veraltert
                 "X-RapidAPI-Host": "low-carb-recipes.p.rapidapi.com"
         ]
 
