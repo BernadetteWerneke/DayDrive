@@ -51,6 +51,7 @@
 		4B8A78482A817CEB008A41A9 /* StepShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78472A817CEB008A41A9 /* StepShowCard.swift */; };
 		4B8A784A2A817F77008A41A9 /* TimeShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78492A817F77008A41A9 /* TimeShowCard.swift */; };
 		4B8A78A42A857393008A41A9 /* InputDailyTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78A32A857393008A41A9 /* InputDailyTaskView.swift */; };
+		4B8A78AB2A9DF45F008A41A9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A78AA2A9DF45F008A41A9 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		4B8A78492A817F77008A41A9 /* TimeShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeShowCard.swift; sourceTree = "<group>"; };
 		4B8A78A32A857393008A41A9 /* InputDailyTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDailyTaskView.swift; sourceTree = "<group>"; };
 		4B8A78A52A86500D008A41A9 /* Pflichtenheft MotivApp V1.4 .pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft MotivApp V1.4 .pages"; sourceTree = "<group>"; };
+		4B8A78AA2A9DF45F008A41A9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				4B1443442A56F20000399FEC /* GoogleService-Info.plist */,
 				4B8A78A52A86500D008A41A9 /* Pflichtenheft MotivApp V1.4 .pages */,
+				4B8A78AA2A9DF45F008A41A9 /* Config.swift */,
 				4B14447E2A5C789800399FEC /* DailyTask */,
 				4B1444662A5C1DFE00399FEC /* Settings */,
 				4B14435D2A582F1400399FEC /* Recipes */,
@@ -520,6 +523,7 @@
 				4B7F73E62A6978320022181A /* RecipeCardSmall.swift in Sources */,
 				4B8A78482A817CEB008A41A9 /* StepShowCard.swift in Sources */,
 				4B14435A2A57175000399FEC /* Progressring.swift in Sources */,
+				4B8A78AB2A9DF45F008A41A9 /* Config.swift in Sources */,
 				4B14430F2A56E75A00399FEC /* motivationApp.swift in Sources */,
 				4B1444772A5C359F00399FEC /* PersonalDataView.swift in Sources */,
 				4B14434F2A57150100399FEC /* TabBar.swift in Sources */,
