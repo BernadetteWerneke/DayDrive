@@ -28,5 +28,3 @@ DayDrive is a motivational app to change lifestyle habits regarding conscious nu
 
 ## Licence
 Copyright @ 2023 Bernadette Werneke
-All Rights Reserved
-No part of this software or any of its content may be reproduced, copied, modified or adapted without the prior written consnet of the author unless otherwise indicated for stand-alone materials.
