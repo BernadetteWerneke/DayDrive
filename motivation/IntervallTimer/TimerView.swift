@@ -4,6 +4,20 @@
 //
 //  Created by Bernadette Werneke on 06.07.23.
 //
+//  Warum soll ich ein Rad erfinden, wenn ich ein Auto bauen will?
+//  Deshalb habe ich brauchbaren fremden Code übernommen.
+//  Der Timer soll nur Daten liefern, ist nicht die eigentliche Aufgabe.
+//  Vorteile: Wie ist der Codestyle anderer, also über den Tellerrand schauen. Fremder Code muss verstanden und entsprechend angepsst werden.
+//
+//  Der Fasten Timer ist aus einem youtube-Video entnommen:
+//  https://www.youtube.com/watch?v=pdYTtbOl9YQ
+//  "Build a Fasting Timer App in SwiftUI - Complete Course" von DesignCode
+//  Änderungen:
+//  * Start/End Button, sodass die Uhr nur läuft während der Fastenzeit. Ursprunglicher Code war eine never Ending Story mit Fastenzeit ein/aus + Essenszeit ein/aus abwechselnd, wodurch die Uhr permament lief.
+//  * Farben angepasst entsprechend meinem Moodboard
+//  * diverse Anpassungen + Vereinfachungen des Codes entsprechend dem Handling meiner App wie letzter Abschnitt unten Speicherung der Daten
+//
+//
 
 import SwiftUI
 

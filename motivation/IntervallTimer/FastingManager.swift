@@ -4,6 +4,15 @@
 //
 //  Created by Bernadette Werneke on 06.07.23.
 //
+//  Der Fasten Timer ist aus einem youtube-Video entnommen:
+//  https://www.youtube.com/watch?v=pdYTtbOl9YQ
+//  "Build a Fasting Timer App in SwiftUI - Complete Course" von DesignCode
+//  Änderungen:
+//  * Start/End Button, sodass die Uhr nur läuft während der Fastenzeit. Ursprunglicher Code war eine never Ending Story mit Fastenzeit ein/aus + Essenszeit ein/aus abwechselnd, wodurch die Uhr permament lief.
+//  * Farben angepasst entsprechend meinem Moodboard
+//  * diverse Anpassungen + Vereinfachungen des Codes entsprechend dem Handling meiner App
+//
+//
 
 import Foundation
 

@@ -4,24 +4,15 @@
 //
 //  Created by Bernadette Werneke on 21.07.23.
 //
+//  Dieser Codepart des "DateHeaders" mit dazugehörigen Files im Ordner "extensions" ist aus einem youtube-Video entnommen:
+//  https://www.youtube.com/watch?v=sbheMzA3jTI&t=1097s
+//  SwiftUI - Task Management App - SwiftData - Complex UI - Xcode 15 - SwiftUI Tutorials - Pt 1 von Kavsoft
+//  https://www.youtube.com/watch?v=x-LqfOui2-I&t=0s
+//  SwiftUI - Task Management App - SwiftData - Complex UI - Xcode 15 - SwiftUI Tutorials - Pt 2
+//
 
 import SwiftUI
 
-/*struct Task: Identifiable {
-    var id: UUID = .init()
-    var taskTitle: String
-    var creationDate: Date = .init()
-    var isCompleted: Bool = false
-    var tint: Color
-}*/
-
-/*var sampleTasks: [Task] = [
-    .init(taskTitle: "Record Video", creationDate: .updateHour(-5), isCompleted: true, tint: .red),
-    .init(taskTitle: "Redesign Website", creationDate: .updateHour(-3), tint: .green),
-    .init(taskTitle: "Go for a walk", creationDate: .updateHour(-4), isCompleted: true, tint: .yellow),
-    .init(taskTitle: "Edit Video", creationDate: .updateHour(0), isCompleted: true, tint: .mint),
-    .init(taskTitle: "Tweet", creationDate: .updateHour(1), tint: .pink),
-]*/
 
 extension Date {
     //Stundenaktualisierung
