@@ -26,5 +26,4 @@ DayDrive is a motivational app to change lifestyle habits regarding conscious nu
 2. Open the project in Xcode.
 3. Run the project in the OS simulator or on a physical device.
 
-## Licence
-Copyright @ 2023 Bernadette Werneke
+<img src="https://github.com/BernadetteWerneke/DayDrive/assets/120725476/1a1feb87-49e7-4d50-b2b6-355171fce892" width="500">
